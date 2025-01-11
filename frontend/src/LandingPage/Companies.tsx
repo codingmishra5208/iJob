@@ -12,12 +12,12 @@ const data=[
 
 const Companies=()=>{
   return(
-    <div className="mt-20 pb-5">
-        <div className="text-4xl text-mine-shaft-100 text-center">Trusted By <span className="text-bright-sun-400">1000+</span> Companies</div>
+    <div className="mt-20 pb-5 ">
+        <div className="text-4xl font-semibold text-mine-shaft-100 text-center">Trusted By <span className="text-bright-sun-400">1000+</span> Companies</div>
         <Marquee pauseOnHover={true}>
          {
              data.map((image,index)=>
-              <div key={index} className="mt-10 px-10 mx-8 hover:bg-mine-shaft-900 cursor-pointer">
+              <div key={index} className="mt-14 px-10 mx-8 hover:bg-mine-shaft-900 cursor-pointer">
                 <img src={image} alt="" className="h-14" />
             </div>)
          } 

@@ -5,7 +5,7 @@ import { Avatar } from '@mantine/core';
 
 const DreamJob = () => {
   return (
-    <div className="flex items-center px-16">
+    <div className="flex items-center px-16 bg-mine-shaft-950">
       <div className="flex flex-col w-[45%] gap-3">
         <div className="text-6xl font-bold leading-tight text-mine-shaft-100">Find your <span className="text-bright-sun-400">dream</span> <span className="text-bright-sun-400">job</span> with us</div>
         <div className="text-lg text-mine-shaft-200">

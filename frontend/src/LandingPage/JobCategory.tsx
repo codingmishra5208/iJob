@@ -54,7 +54,7 @@ const JobCategory = () => {
             Browse <span className="text-bright-sun-400">jobs </span>
             Category
          </div>
-         <div className="text-lg mb-14 text-mine-shaft-300 text-center w-1/2 mx-auto">
+         <div className="text-lg mb-14 text-mine-shaft-100 text-center w-1/2 mx-auto">
             Explore diverse job opportunities tailored to your skills. Start your career journey today!
          </div>
 
@@ -72,7 +72,7 @@ const JobCategory = () => {
                            <img src={item.image} className="w-10 h-10" alt={item.name} />
                         </div>
                         <div className="text-mine-shaft-100 text-lg font-semibold">{item.name}</div>
-                        <div className="text-sm text-center text-mine-shaft-300">{item.desc}</div>
+                        <div className="text-sm text-center text-mine-shaft-100">{item.desc}</div>
                         <div className="text-bright-sun-300 text-lg">{item.title}</div>
                      </div>
                   </Carousel.Slide>
