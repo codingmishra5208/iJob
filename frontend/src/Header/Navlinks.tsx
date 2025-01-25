@@ -7,6 +7,7 @@ const Navlinks=()=>{
         {name:"Find Talent",url:"find-talent"},
         {name:"Upload Job",url: "upload-job"},
         {name:"About us",url:"about"},
+        {name:"Signup",url:"signup"}
      ]
 
 const [activeLink, setActiveLink] = useState(null);

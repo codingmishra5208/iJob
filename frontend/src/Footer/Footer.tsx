@@ -5,6 +5,7 @@ import {
   IconBrandGithub,
   IconBrandInstagram,
 } from "@tabler/icons-react";
+import { useLocation } from "react-router-dom";
 
 const footerLinks=[
      {title: "Product", links:["Find Job", "Find Company","Find Employee"]},
@@ -13,8 +14,10 @@ const footerLinks=[
 ]
 
 const Footer = () => {
+  const location = useLocation();
+  
   return (
-    <div className="mt-28 pb-5 flex justify-around gap-5">
+    location.pathname!='/signup' && <div className="pt-28 pb-5 flex justify-around gap-5 bg-mine-shaft-950 font-['poppins']">
       <div className="w-1/4 flex flex-col gap-4">
         <div className="flex gap-2 items-center text-bright-sun-400">
           <IconAnchor stroke={2.5} className="h-6 w-6" />
@@ -49,7 +52,10 @@ const Footer = () => {
         </div>
         )
       }
+         
+      
     </div>
+     
   );
 };
 export default Footer;
