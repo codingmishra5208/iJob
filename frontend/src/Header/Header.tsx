@@ -1,16 +1,19 @@
 import { IconAnchor, IconBellRinging, IconSettings } from "@tabler/icons-react";
 import Navlinks from "./Navlinks";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ProfileMenu from "./ProfileMenu";
 
 const Header = () => {
   const location = useLocation();
   return location.pathname != '/signup' && location.pathname != '/login' ? (
     <div className="w-full text-white flex justify-between px-6 items-center h-20 bg-mine-shaft-950 font-['poppins']">
+      <Link to='/'>
       <div className="flex gap-2 items-center  text-bright-sun-400">
         <IconAnchor stroke={2.5} className="h-10 w-8" />
         <div className="text-3xl font-semibold">iJobs</div>
+      
       </div>
+      </Link>
       <Navlinks />
       <div className="flex gap-3 items-center">
     {/*profile menu ko add kiya hai componenent me   */}

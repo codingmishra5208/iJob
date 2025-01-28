@@ -7,8 +7,7 @@ import { useLocation } from "react-router-dom";
 const SignupPage=()=>{
    const location = useLocation();
   return(
-     <div className="min-h-[90vh] bg-mine-shaft-950 font-['poppins'] overflow-hidden">
-          
+     <div className="min-h-[90vh] bg-mine-shaft-950 font-['poppins'] overflow-hidden">          
           <div className={`w-[100vw] h-[100vh] flex [&>*]:flex-shrink-0 transition-all ease-in-out duration-1000
              ${location.pathname=='/signup'?'-translate-x-1/2':'translate-x-0'}`}>
             <Login />            

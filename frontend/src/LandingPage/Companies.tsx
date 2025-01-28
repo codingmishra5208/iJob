@@ -1,11 +1,15 @@
 import Marquee from "react-fast-marquee";
 
 const data=[
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnt253Qlda-6a5x8LltLHZD4IWMCmk7LOQ9Q&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbdQi0yohiPRpm5Twf9hluWmgMe8smBh6Mcg&s",
-    "https://www.drupal.org/files/Capgemini_Logo_2COL_RGB.png",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT35Tjphq1NeKZNVeCM2YOlUHJH0HHm_fzC1g&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYjZ4z0flEQrOr3iE11EcKbCB2uqiwpuEznQ&s",
+ "https://job-portal-seven-psi.vercel.app/Companies/Figma.png",
+ "https://job-portal-seven-psi.vercel.app/Companies/Google.png",
+ "https://job-portal-seven-psi.vercel.app/Companies/Microsoft.png",
+ "https://job-portal-seven-psi.vercel.app/Companies/Pinterest.png",
+ "https://job-portal-seven-psi.vercel.app/Companies/Slack.png",
+ "https://job-portal-seven-psi.vercel.app/Companies/Spotify.png",
+ "https://job-portal-seven-psi.vercel.app/Companies/Netflix.png",
+ "https://job-portal-seven-psi.vercel.app/Companies/Oracle.png",
+ "https://job-portal-seven-psi.vercel.app/Companies/Walmart.png",
 ];
 
 
