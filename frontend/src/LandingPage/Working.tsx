@@ -1,9 +1,9 @@
 import { Avatar } from "@mantine/core";
 
 
-const img="https://job-portal-seven-psi.vercel.app/Working/Girl.png";
+
 const img2="https://png.pngtree.com/png-vector/20230209/ourmid/pngtree-notebook-icon-png-image_6591697.png";
-const img3="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-7.png";
+const img3="https://job-portal-seven-psi.vercel.app/avatar1.png";
 
 
 const Working=()=>{
@@ -17,7 +17,7 @@ const Working=()=>{
            Effortlessely navigate through the process and land your dream job.</div>
             <div className="flex gap-5 px-24 justify-between items-center ">
                 <div className="relative">
-                    <img className="w-[30rem]" src={img} alt="" />
+                    <img className="w-[30rem]" src='girl.png' alt="" />
                     <div className="w-36 flex flex-col items-center gap-1 border border-bright-sun-400 rounded-xl py-3 px-1 backdrop-blur-md top-[15%] right-0 absolute">
                     <Avatar className="!h-16 !w-16" src={img3} alt="" />
                       <div className="text-sm font-semibold text-mine-shaft-200 text-center">Complete your profile</div>

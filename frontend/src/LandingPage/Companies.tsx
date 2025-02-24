@@ -1,15 +1,17 @@
 import Marquee from "react-fast-marquee";
 
 const data=[
- "https://job-portal-seven-psi.vercel.app/Companies/Figma.png",
- "https://job-portal-seven-psi.vercel.app/Companies/Google.png",
- "https://job-portal-seven-psi.vercel.app/Companies/Microsoft.png",
- "https://job-portal-seven-psi.vercel.app/Companies/Pinterest.png",
- "https://job-portal-seven-psi.vercel.app/Companies/Slack.png",
- "https://job-portal-seven-psi.vercel.app/Companies/Spotify.png",
- "https://job-portal-seven-psi.vercel.app/Companies/Netflix.png",
- "https://job-portal-seven-psi.vercel.app/Companies/Oracle.png",
- "https://job-portal-seven-psi.vercel.app/Companies/Walmart.png",
+  "https://job-portal-seven-psi.vercel.app/Companies/Google.png",
+  "https://job-portal-seven-psi.vercel.app/Companies/Amazon.png",
+   "https://job-portal-seven-psi.vercel.app/Companies/Figma.png",
+   "https://job-portal-seven-psi.vercel.app/Companies/Oracle.png",
+   "https://job-portal-seven-psi.vercel.app/Companies/Walmart.png",
+   "https://job-portal-seven-psi.vercel.app/Companies/Meta.png",
+    "https://job-portal-seven-psi.vercel.app/Companies/Microsoft.png",
+    "https://job-portal-seven-psi.vercel.app/Companies/Spotify.png",
+    "https://job-portal-seven-psi.vercel.app/Companies/Slack.png",
+    "https://job-portal-seven-psi.vercel.app/Companies/Pinterest.png",
+    
 ];
 
 

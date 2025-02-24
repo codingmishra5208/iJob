@@ -1,9 +1,10 @@
-import { ActionIcon, Button, Divider } from "@mantine/core";
+import { ActionIcon, Button, Divider, Input } from "@mantine/core";
 import { IconBriefcase, IconMapPin, IconPencil } from "@tabler/icons-react";
 
 
 const Profile=()=>{
   
+ 
   return(
      
     <div className="w-4/5 mx-auto">
@@ -25,6 +26,9 @@ const Profile=()=>{
              <div className="text-lg flex gap-1 items-center text-mine-shaft-300">
              <IconMapPin className="h-5 w-5" stroke={1.5} />New York, United States
              </div>
+            </div>
+            <div>
+            <Input size="md" radius="md" placeholder="Input component" />
             </div>
              
        </div>

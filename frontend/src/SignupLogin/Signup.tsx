@@ -10,6 +10,8 @@ import { IconArrowLeft, IconAt, IconLock } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
 import axios from "axios";
+import toast from "react-hot-toast";
+import { useAuth } from "../Context/AuthProvider";
 
 type Inputs = {
   fullName: string;
@@ -18,6 +20,8 @@ type Inputs = {
   confirmPassword: string;
 };
 const Signup = () => {
+  const {storeToken} = useAuth();
+
   const {
     register,
     handleSubmit,
@@ -31,31 +35,36 @@ const Signup = () => {
       email: data.email,
       password: data.password,
       confirmPassword: data.confirmPassword,
+       
     };
+ 
+ 
 
     try {
       const response = await axios.post('http://localhost:3000/signup', userInfo);
-      console.log(response.data);
-      alert("Signup Successfully");
-      reset(); 
-    } catch (error) {
+          toast.success("Signup Sucessfully. ");
+          const token = response.data.token;
+           storeToken(token);
+       reset()
+       console.log(response);
+     } catch (error) {
       console.error(error);
       if (axios.isAxiosError(error)) {
         if (error.response) {
           if (error.response.status === 409) {
-            alert(error.response.data.message); 
+            toast.error(error.response.data.message); 
           } else {
-            alert("An error occurred. Please try again."); 
+            toast.error('An error occurred. Please try again.'); 
           }
         } else {
-          alert("Network error. Please try again."); 
+          toast.error('Network error. Please check your connection.');
         }
-      } else {
-        alert("An unexpected error occurred.");
       }
+      
     }
   };
 
+    
   return ( 
     <div className="w-1/2 px-20 flex flex-col justify-center gap-3">
       <Link className="my-5 inline-block ml-auto" to="/">

@@ -3,7 +3,10 @@ import Navlinks from "./Navlinks";
 import { Link, useLocation } from "react-router-dom";
 import ProfileMenu from "./ProfileMenu";
 
+
 const Header = () => {
+  
+
   const location = useLocation();
   return location.pathname != '/signup' && location.pathname != '/login' ? (
     <div className="w-full text-white flex justify-between px-6 items-center h-20 bg-mine-shaft-950 font-['poppins']">

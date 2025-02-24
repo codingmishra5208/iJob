@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-
 const findjob = require('../Model/FindJobModel');
-  
+const {jwtAuthMiddleware} = require('../Utils/Jwt');
+
  router.post("/",async(req,res)=>{
         const data = req.body;
         try{ 
@@ -14,9 +14,9 @@ const findjob = require('../Model/FindJobModel');
             res.status(400).json({error:err.message});
         }
 
- })
+ }) 
 
- router.get('/',async(req,res)=>{
+ router.get('/', jwtAuthMiddleware , async(req,res)=>{
       try{
          const data = await findjob.find();
          res.status(200).json(data);

@@ -38,8 +38,8 @@ const DreamJob = () => {
          <div className='w-fit border-bright-sun-400 border -right-10 rounded-lg p-2 backdrop-blur-md top-[50%] absolute '>
             <div className='text-center mb-1 text-sm text-mine-shaft-100 '>10K got job</div>
             <Avatar.Group>
-      <Avatar src="avatar2.png" />
-      <Avatar src="avatar3.png" />
+       <Avatar src="avatar2.png" />
+       <Avatar src="avatar3.png" />
       <Avatar src="avatar4.png" />
       <Avatar>+5</Avatar>
     </Avatar.Group>
